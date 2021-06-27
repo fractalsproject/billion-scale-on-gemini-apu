@@ -25,7 +25,7 @@ Install the python package requirements:
 ```
 pip install -r requirements.txt
 ```
-Build an example T3 image from its location in the './t3' directory:
+Build an example T3 image from its location in the *./t3* directory:
 ```
 python install.py --dockerfile t3/faiss_cpu/Dockerfile
 ```
@@ -50,7 +50,7 @@ Create a custom branch off main in the project repository:
 ```
 git checkout -b [your_team_name]
 ```
-In the '.t3/' directory, create a directory using that name.
+In the *.t3/* directory, create a directory using that name.
 ```
 mkdir t3/[your_team_name]
 ```
@@ -75,7 +75,7 @@ To benchmark your algorithm, first create an algorithm configuration yaml in you
 
 Now you can benchmark your algorithm using the run.py script:
 ```
-python run.py --definitions t2/[your_team_name]/algos.yaml
+python run.py --definitions t3/[your_team_name]/algos.yaml
 ```
 ### Submitting Your Algorithm
 
@@ -90,7 +90,7 @@ All but the binary index file can be submitted with a pull request of your custo
 We will provide you with an upload area for your binary index file during the competition.
 
 Additional information may be required:
-* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *./t3/[your_team_name]* directory.
+* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *./t3/[your_team_name]/* directory.
 * If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does.
 
 <a name="for_organizers"/>
