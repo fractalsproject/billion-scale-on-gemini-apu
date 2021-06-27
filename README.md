@@ -63,7 +63,7 @@ python install.py --dockerfile [path_to_dockerfile]
 Develop and add your algorithm to the benchmarks/algorithms directory.
 * You will need to subclass from the BigAnn class in benchmarks/algorithms/base.py and implement the functions of that parent class.
 * See the examples benchmarks/algorithms/faiss_inmem.py or benchmarks/algorithms/diskann.py
-* * As you develop and test your algorithm, you will likley need to test on smaller datasets.  The framework provides a way to create atasets of various sizes.  For example, to create a dataset with 10000 20-dimensional random floating point vectors, run:
+* As you develop and test your algorithm, you will likley need to test on smaller datasets.  The framework provides a way to create atasets of various sizes.  For example, to create a dataset with 10000 20-dimensional random floating point vectors, run:
 ```
 python create_dataset.py --dataset random-xs
 ```
