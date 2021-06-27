@@ -18,11 +18,11 @@
 ### Getting Started
 
 * Clone this repository and cd into the project directory:
-'''
+```
 git clone <REPO_URL>
-'''
+```
 * Install the python package requirements:
-> pip install -r requirements.txt
+```pip install -r requirements.txt```
 * Build an example T3 image from its location in the './t3' directory:
 > python install.py --dockerfile t3/faiss_cpu/Dockerfile
 * Create a sample dataset:
@@ -37,8 +37,8 @@ git clone <REPO_URL>
 * Choose a short name for your team without spaces or special characters.  
 * In the '.t3/' directory, create a directory using that name.
 * Develop and add your Docker build file into that directory.
-* * During evaluation, this docker image will be run and your algorithm (covered next) will run inside the container that is instantiated.
-* * Make sure you use the following command to build the image:
+  * During evaluation, this docker image will be run and your algorithm (covered next) will run inside the container that is instantiated.
+  * Make sure you use the following command to build the image:
 > python install.py --dockerfile [path_to_dockerfile]
 * Develop and add your algorithm to the benchmarks/algorithms directory.
 * * You will need to subclass from the BigAnn class in benchmarks/algorithms/base.py and implement the functions of that parent class.
