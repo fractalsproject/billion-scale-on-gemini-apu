@@ -76,7 +76,7 @@ To benchmark your algorithm, first create an algorithm configuration yaml in you
 Now you can benchmark your algorithm using the run.py script:
 ```
 python run.py --definitions t2/[your_team_name]/algos.yaml
-
+```
 ### Submitting Your Algorithm
 
 A submission is composed of the following:
