@@ -71,7 +71,7 @@ When you are ready to test on the competition datasets, use the create_dataset.p
 ```
 python create_dataset.py --dataset [sift-1B|bigann-1B|text2image-1B|msturing-1B|msspacev-1B|ssnpp-1B]
 ```
-To benchmark your algorithm, first create an algorithm configuration yaml in your teams directory called 'algos.yaml.'  This file contains the index build parameters and query parameters that will get passed to your algorithm at run-time.  Look at the example in './t3/...'.
+To benchmark your algorithm, first create an algorithm configuration yaml in your teams directory called *algos.yaml.*  This file contains the index build parameters and query parameters that will get passed to your algorithm at run-time.  Please look at this example.
 
 Now you can benchmark your algorithm using the run.py script:
 ```
@@ -81,16 +81,16 @@ python run.py --definitions t2/[your_team_name]/algos.yaml
 
 A submission is composed of the following:
 * 1 index binary file 
-* 1 './t3/[your_team_name]/algos.yaml' with only 1 set of build parameters and at most 10 sets of query parameters
-* Your algorithm's python class ( in the './benchmark/algorithms/' directory. )
-* Your Docker build file ( in the './t3/[your_team_name]/' directory. )
+* 1 *./t3/[your_team_name]/algos.yaml* with only 1 set of build parameters and at most 10 sets of query parameters
+* Your algorithm's python class ( in the *./benchmark/algorithms/* directory. )
+* Your Docker build file ( in the *./t3/[your_team_name]/* directory. )
 
 All but the binary index file can be submitted with a pull request of your custom branch.
 
 We will provide you with an upload area for your binary index file during the competition.
 
 Additional information may be required:
-* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the './t3/[your_team_name]' directory.
+* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *./t3/[your_team_name]* directory.
 * If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does.
 
 <a name="for_organizers"/>
