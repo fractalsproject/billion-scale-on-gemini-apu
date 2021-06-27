@@ -18,7 +18,9 @@
 ### Getting Started
 
 * Clone this repository and cd into the project directory:
->> git clone <REPO_URL>
+'''
+git clone <REPO_URL>
+'''
 * Install the python package requirements:
 > pip install -r requirements.txt
 * Build an example T3 image from its location in the './t3' directory:
