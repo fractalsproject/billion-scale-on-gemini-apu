@@ -5,7 +5,7 @@
    
 ## Introduction
 
-## For Participants
+## For_Participants
 
 ### Requirements
 
@@ -99,7 +99,7 @@ Additional information may be required:
 * If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does.
 
 <a name="for_organizers"/>
-## For Organizers
+## For_Organizers
 
 ### Evaluating A Participant Algorithm
 
