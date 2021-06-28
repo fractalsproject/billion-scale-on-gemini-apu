@@ -4,7 +4,7 @@
 
 [Introduction](#introduction)  
 [For Participants](#for_participants) 
-[Getting Started](#getting_started) 
+ - [Getting Started](#getting_started) 
 [Developing Your Algorithm](#developing_your_algorithm) 
 [How To Get Help](#how_to_get_help)
 [For Organizers](#for_organizers)  
@@ -75,7 +75,7 @@ Develop and add your algorithm to the *benchmarks/algorithms* directory.
 ```
 python create_dataset.py --dataset random-xs
 ```
-* To see a complete list, run the following:
+* To see a complete list of datasets, run the following:
 ```
 python create_dataset.py --help
 ```
@@ -103,7 +103,7 @@ We will provide you with an upload area for your binary index file during the co
 
 Additional information may be required:
 * To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *t3/[your_team_name]/* directory.
-* If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does.
+* If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does (host drivers, firmware, etc.)
 
 ### How_To_Get_Help
 
