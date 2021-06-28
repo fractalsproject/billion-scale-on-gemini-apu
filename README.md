@@ -8,7 +8,7 @@
   - [Developing Your Algorithm](#developing_your_algorithm) 
   - [How To Get Help](#how_to_get_help)
 - [For Organizers](#for_organizers)  
-- [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
+  - [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
    
 ## Introduction
 
