@@ -4,11 +4,11 @@
 
 [Introduction](#introduction)  
 [For Participants](#for_participants) 
- [Getting Started](#getting_started) 
- [Developing Your Algorithm](#developing your algorithm) 
- [How To Get Help](#how_to_get_help)
+-[Getting Started](#getting_started) 
+-[Developing Your Algorithm](#developing your algorithm) 
+-[How To Get Help](#how_to_get_help)
 [For Organizers](#for_organizers)  
- [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
+-[Evaluating Participant Algorithms](#evaluating_participant_algorithms)
    
 ## Introduction
 
