@@ -19,7 +19,7 @@ The T1 and T2 tracks of the competition restrict the evaluation of algorithms to
 
 Participants must submit their algorithm via a pull request.  Participants are not required to submit proprietary source code such as software drivers or firmware.
 
-Organizers will evaluate the participants algorithm and hardware via one of these options:
+Organizers will evaluate the participant's algorithm and hardware via one of these options:
 * Participants send their hardware to the organizers at the participant's expense.
 * Participants give organizers remote access to the hardware.
 * Participants run the evaluation benchmarks on their own, and send the results to the organizers.
