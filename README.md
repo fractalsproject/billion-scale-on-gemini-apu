@@ -34,7 +34,7 @@ You will need the following installed on your machine:
 
 ### Getting_Started
 
-This section will present a small tutorial about how to use this framework.  This understanding is key in order to submit your algorithm.
+This section will present a small tutorial about how to use this framework and several of the key scripts you will use throughout the development of your algorithm and eventual submission.
 
 First, clone this repository and cd into the project directory:
 ```
