@@ -64,7 +64,7 @@ This will place a plot of the algorithms performance, recall-vs-throughput, into
 
 ### Developing_Your_Algorithm
 
-First, please create a short name for your team without spaces or special characters.  Henceforth in these instructions, this will be references as [your_team_name].
+First, please create a short name for your team without spaces or special characters.  Henceforth in these instructions, this will be referenced as [your_team_name].
 
 Create a custom branch off main in this repository:
 ```
