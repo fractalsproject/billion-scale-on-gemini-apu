@@ -3,10 +3,8 @@
 [For Participants](#for_participants)  
 [For Organizers](#for_organizers)  
    
-<a name="introduction"/>
 ## Introduction
 
-<a name="for_participants"/>
 ## For Participants
 
 ### Requirements
