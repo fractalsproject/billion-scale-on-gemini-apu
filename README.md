@@ -107,7 +107,7 @@ python run.py --definitions t3/[your_team_name]/algos.yaml
 A submission is composed of the following:
 * 1 index binary file 
 * 1 *algos.yaml* with only 1 set of build parameters and at most 10 sets of query parameters ( placed in the *t3/[your_team_name]/* directory. )
-* Your algorithm's python class ( in the *benchmark/algorithms/* directory. )
+* Your algorithm's python class ( placed in the *benchmark/algorithms/* directory. )
 * Your Docker build file ( in the *t3/[your_team_name]/* directory. )
 
 All but the binary index file can be submitted with a pull request of your custom branch.
