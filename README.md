@@ -124,8 +124,8 @@ All but the binary index file can be submitted with a pull request of your custo
 We will provide you with an upload area for your binary index file during the competition.
 
 Additional information may be required:
-* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *t3/[your_team_name]/* directory.
-* If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does (host drivers, firmware, etc.)
+* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Put this evidence into the *t3/[your_team_name]/* directory.
+* If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does (host drivers, firmware, etc.) Put this explanation into the t3/[your_team_name]/ directory.
 
 ### How_To_Get_Help
 
