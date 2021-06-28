@@ -48,11 +48,11 @@ Build an example T3 image from its location in the *t3/* directory:
 ```
 python install.py --dockerfile t3/faiss_cpu/Dockerfile
 ```
-Create a sample dataset:
+Create a small, sample dataset:
 ```
-python create_dataset.py --dataset random-s
+python create_dataset.py --dataset random-xs
 ```
-Run an evaluation using the matching algos.yaml definition file:
+Run a benchmark evaluation using the algorithm's definition file:
 ```
 python run.py --definitions t3/faiss_cpu/algos.yaml
 ```
@@ -60,16 +60,17 @@ Analyze the results:
 ```
 python plot.py 
 ```
+This will place a plot of the algorithms performance, recall-vs-throughput, into the *results/* directory.
 
 ### Developing_Your_Algorithm
 
-First, please create a short name for your team without spaces or special characters.  This name will be used throughout the competition to identify your submission later.
+First, please create a short name for your team without spaces or special characters.  Henceforth in these instructions, this will be references as [your_team_name].
 
-Create a custom branch off main in the project repository:
+Create a custom branch off main in this repository:
 ```
 git checkout -b [your_team_name]
 ```
-In the *t3/* directory, create a directory using that name.
+In the *t3/* directory, create a sub-directory using that name.
 ```
 mkdir t3/[your_team_name]
 ```
