@@ -1,4 +1,7 @@
-# T3 Track: Table of Contents  
+# T3 Track
+
+## Table Of Contents
+
 [Introduction](#introduction)  
 [For Participants](#for_participants)  
 [For Organizers](#for_organizers)  
