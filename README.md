@@ -3,8 +3,12 @@
 ## Table Of Contents
 
 [Introduction](#introduction)  
-[For Participants](#for_participants)  
+[For Participants](#for_participants) 
+* [Getting Started](#getting_started) 
+* [Developing Your Algorithm](#developing your algorithm) 
+* [How To Get Help](#how_to_get_help)
 [For Organizers](#for_organizers)  
+* [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
    
 ## Introduction
 
@@ -16,7 +20,7 @@ You will need the following installed on your machine:
 * Docker ( we tested with Docker version 19.03.15, build 99e3ed8919 )
 * Python ( we tested with Anaconda's python distribution version 3.6 )
 
-### Getting Started
+### Getting_Started
 
 This section will present a small tutorial about how to use this framework.  This understanding is key in order to submit your algorithm to the competition.
 
@@ -45,7 +49,7 @@ Analyze the results:
 python plot.py 
 ```
 
-### Developing Your Algorithm
+### Developing_Your_Algorithm
 
 First, please create a short name for your team without spaces or special characters.  This name will be used throughout the competition to identify your submission later.
 
@@ -85,7 +89,7 @@ Now you can benchmark your algorithm using the run.py script:
 ```
 python run.py --definitions t3/[your_team_name]/algos.yaml
 ```
-### Submitting Your Algorithm
+### Submitting_Your_Algorithm
 
 A submission is composed of the following:
 * 1 index binary file 
@@ -101,9 +105,10 @@ Additional information may be required:
 * To qualify for the cost track, please include evidence of the MSRP of your entire system.  Place this evidence in the *t3/[your_team_name]/* directory.
 * If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does.
 
-<a name="for_organizers"/>
+### How_To_Get_Help
+
 ## For_Organizers
 
-### Evaluating A Participant Algorithm
+### Evaluating_Participant_Algorithms
 
 
