@@ -17,7 +17,7 @@ The T1 and T2 tracks of the competition restrict the evaluation of algorithms to
 * One based on power consumption
 * One based on hardware cost
 
-Participants must submit their algorithm via a pull request in this repository.  Participants are not required to submit proprietary source code such as software drivers or firmware.
+Participants must submit their algorithm via a pull request.  Participants are not required to submit proprietary source code such as software drivers or firmware.
 
 Organizers will evaluate the participants algorithm and hardware via one of these options:
 * Participants send their hardware to the organizers at the participant's expense.
