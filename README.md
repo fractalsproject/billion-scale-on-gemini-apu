@@ -56,16 +56,21 @@ mkdir t3/[your_team_name]
 ```
 Develop and add your Docker build file into that directory.
 * During evaluation, this docker image will be run and your algorithm (covered next) will run inside the container that is instantiated.
-* Make sure you use the following command to build the docker image:
+* See the following Docker file example.
+* Make sure you use the following command to build the docker image in the top-level directory of the repository:
 ```
 python install.py --dockerfile [path_to_dockerfile]
 ```
 Develop and add your algorithm to the benchmarks/algorithms directory.
 * You will need to subclass from the BigAnn class in benchmarks/algorithms/base.py and implement the functions of that parent class.
-* See the examples benchmarks/algorithms/faiss_inmem.py or benchmarks/algorithms/diskann.py
+* See the follow example.
 * As you develop and test your algorithm, you will likley need to test on smaller datasets.  This framework provides a way to create datasets of various sizes.  For example, to create a dataset with 10000 20-dimensional random floating point vectors, run:
 ```
 python create_dataset.py --dataset random-xs
+```
+* To see a complete list, run the following:
+```
+python create_dataset.py --help
 ```
 When you are ready to test on the competition datasets, use the create_dataset.py script as follows:
 ```
