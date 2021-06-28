@@ -115,9 +115,9 @@ This will place a plot of the algorithms performance, recall-vs-throughput, into
 
 A submission is composed of the following:
 * 1 index binary file (  choose your best index )
-* 1 *algos.yaml* with the lone set of build parameters and at most 10 sets of query parameters ( placed in the *t3/[your_team_name]/* directory. )
-* Your algorithm's python class ( placed in the *benchmark/algorithms/* directory. )
-* Your Docker build file ( in the *t3/[your_team_name]/* directory. )
+* 1 *algos.yaml* with the lone set of build parameters and at most 10 sets of query parameters ( put it into the *t3/[your_team_name]/* directory. )
+* Your algorithm's python class ( put it into the *benchmark/algorithms/* directory. )
+* Your Docker build file ( put it into the *t3/[your_team_name]/* directory. )
 
 All but the binary index file can be submitted with a pull request of your custom branch.
 
