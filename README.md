@@ -12,6 +12,18 @@
    
 ## Introduction
 
+The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAN and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller.  Participants can enter any commercially available hardware ( with commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
+* One based on the typical ANN performances metrics recall-vs-throughput
+* One based on power consumption
+* One based on hardware cost
+
+Participants must submit their algorithm via a pull request in this repository.  Participants are not required to submit proprietary source code such as software drivers or firmware.
+
+Organizers will evaluate the participants algorithm and hardware via one of these options:
+* Participants send their hardware to the organizers at the participant's expense.
+* Participants give organizers remote access to the hardware.
+* Participants run the evaluation benchmarks on their own, and send the results to the organizers.
+
 ## For_Participants
 
 ### Requirements
