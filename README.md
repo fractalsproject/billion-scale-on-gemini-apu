@@ -9,6 +9,9 @@
   - [How To Get Help](#how_to_get_help)
 - [For Organizers](#for_organizers)  
   - [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
+    - [Participant_Sends_Hardware_To_Organizers](#participant_sends_hardware_to_organizers)
+    - [Participant_Gives_Remote_Access_To_Organizer](#participant_gives_remote_access_to_organizer)
+    - [Participant_Runs_And_Submits_Benchmarks](#participant_runs_and_submits_benchmark)
    
 ## Introduction
 
@@ -137,4 +140,17 @@ There are several ways to get help as you develop your algorithm:
 
 ### Evaluating_Participant_Algorithms
 
+How a participan't algorithm is benchmarked will depend on how they registered for the T3 competition:
+
+### Participant_Sends_Hardware_To_Organizers
+
 [TBD]
+
+### Participant_Gives_Remote_Access_To_Organizer
+
+[TBD]
+
+### Participant_Runs_And_Submits_Benchmarks
+
+[TBD]
+
