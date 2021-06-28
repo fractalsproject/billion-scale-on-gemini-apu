@@ -120,8 +120,12 @@ Additional information may be required:
 
 ### How_To_Get_Help
 
+There are several ways to get help as you develop your algorithm:
+* You can submit an issue at this github repositry.
+* Send an email to the competition google-group.
+
 ## For_Organizers
 
 ### Evaluating_Participant_Algorithms
 
-
+[TBD]
