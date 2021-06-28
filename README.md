@@ -7,10 +7,10 @@
   - [Getting Started](#getting_started) 
   - [Developing Your Algorithm](#developing_your_algorithm) 
   - [How To Get Help](#how_to_get_help)
-- [For Organizers](#for_organizers)  
+- [For Evaluators](#for_organizers)  
   - [Evaluating Participant Algorithms](#evaluating_participant_algorithms)
-    - [Participant_Sends_Hardware_To_Organizers](#participant_sends_hardware_to_organizers)
-    - [Participant_Gives_Remote_Access_To_Organizer](#participant_gives_remote_access_to_organizer)
+    - [Participant_Sends_Hardware_To_Evaluators](#participant_sends_hardware_to_organizers)
+    - [Participant_Gives_Remote_Access_To_Evaluators](#participant_gives_remote_access_to_organizer)
     - [Participant_Runs_And_Submits_Benchmarks](#participant_runs_and_submits_benchmark)
    
 ## Introduction
@@ -22,7 +22,7 @@ The T1 and T2 tracks of the competition restrict the evaluation of algorithms to
 
 Participants must submit their algorithm via a pull request.  Participants are not required to submit proprietary source code such as software drivers or firmware.
 
-Organizers will evaluate the participant's algorithm and hardware via one of these options:
+Compeition Evaluators will evaluate the participant's algorithm and hardware via one of these options:
 * Participants send their hardware to the organizers at the participant's expense.
 * Participants give organizers remote access to the hardware.
 * Participants run the evaluation benchmarks on their own, and send the results to the organizers.
@@ -136,17 +136,17 @@ There are several ways to get help as you develop your algorithm:
 * You can submit an issue at this github repositry.
 * Send an email to the competition google-group.
 
-## For_Organizers
+## For_Evaluators
 
 ### Evaluating_Participant_Algorithms
 
 How a participan't algorithm is benchmarked will depend on how they registered for the T3 competition:
 
-### Participant_Sends_Hardware_To_Organizers
+### Participant_Sends_Hardware_To_Evaluators
 
 [TBD]
 
-### Participant_Gives_Remote_Access_To_Organizer
+### Participant_Gives_Remote_Access_To_Evaluators
 
 [TBD]
 
