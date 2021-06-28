@@ -17,7 +17,9 @@ You will need the following installed on your machine:
 
 ### Getting Started
 
-Clone this repository and cd into the project directory:
+This section will present a small tutorial about how to use this framework.  This understanding is key in order to submit your algorithm to the competition.
+
+First, clone this repository and cd into the project directory:
 ```
 git clone <REPO_URL>
 ```
@@ -61,7 +63,7 @@ Develop and add your Docker build file into that directory.
 ```
 python install.py --dockerfile [path_to_dockerfile]
 ```
-Develop and add your algorithm to the benchmarks/algorithms directory.
+Develop and add your algorithm to the *benchmarks/algorithms* directory.
 * You will need to subclass from the BigAnn class in benchmarks/algorithms/base.py and implement the functions of that parent class.
 * See the follow example.
 * As you develop and test your algorithm, you will likley need to test on smaller datasets.  This framework provides a way to create datasets of various sizes.  For example, to create a dataset with 10000 20-dimensional random floating point vectors, run:
@@ -87,7 +89,7 @@ python run.py --definitions t3/[your_team_name]/algos.yaml
 A submission is composed of the following:
 * 1 index binary file 
 * 1 *algos.yaml* with only 1 set of build parameters and at most 10 sets of query parameters ( placed in the *t3/[your_team_name]/* directory. )
-* Your algorithm's python class ( in the *./benchmark/algorithms/* directory. )
+* Your algorithm's python class ( in the *benchmark/algorithms/* directory. )
 * Your Docker build file ( in the *t3/[your_team_name]/* directory. )
 
 All but the binary index file can be submitted with a pull request of your custom branch.
