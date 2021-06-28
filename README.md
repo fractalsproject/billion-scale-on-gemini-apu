@@ -12,7 +12,7 @@
    
 ## Introduction
 
-The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAM and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller.  Participants can enter any commercially available hardware ( with commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
+The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAM and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller.  Participants can enter any commercially available hardware ( including any commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
 * One based on the typical ANN performances metrics recall-vs-throughput
 * One based on power consumption
 * One based on hardware cost
