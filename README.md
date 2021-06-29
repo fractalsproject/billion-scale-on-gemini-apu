@@ -12,7 +12,7 @@
     - [Participant_Sends_Hardware_To_Evaluators](#participant_sends_hardware_to_organizers)
     - [Participant_Gives_Remote_Access_To_Evaluators](#participant_gives_remote_access_to_organizer)
     - [Participant_Runs_And_Submits_Benchmarks](#participant_runs_and_submits_benchmark)
-   
+  - [Evaluating Power Consumption](#evaluating_power_consumption)   
 ## Introduction
 
 The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAM and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller (other form factors will be considered on a case-by-case basis.)  Participants can enter any commercially available hardware ( including any commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
@@ -168,7 +168,7 @@ Participants give Evaluators access to remote machines via SSH.
 
 This is a very special case, and not all participant's will have this option.  In this case, the participant will run the evaluation on their own.  They will export the data to a CSV via the export.py script and send it to the Evaluators.  Participants are still required to submit a pull request and upload their best index.
 
-## Evaluating Power Consumption
+## Evaluating_Power_Consumption
 
 The hardware chassis which houses all the hardware must support the IPMI management interface.
 
