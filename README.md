@@ -15,12 +15,12 @@
    
 ## Introduction
 
-The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAM and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller.  Participants can enter any commercially available hardware ( including any commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
+The T1 and T2 tracks of the competition restrict the evaluation of algorithms to standard Azure CPU servers with 64GB of RAM and 2TB of SSD.  The only restriction in the T3 track is that the evaluation machine must be a 4U chassis or smaller (other form factors will be considered on a case-by-case basis.)  Participants can enter any commercially available hardware ( including any commercially available add-on PCIe boards ).  T3 will maintain three leaderboards:
 * One based on the typical ANN performances metrics recall-vs-throughput
 * One based on power consumption
 * One based on hardware cost
 
-Participants must submit their algorithm via a pull request.  Participants are not required to submit proprietary source code such as software drivers or firmware.
+Participants must submit their algorithm via a pull request and an index file upload.  Participants are not required to submit proprietary source code such as software drivers or firmware.
 
 Compeition Evaluators will evaluate the participant's algorithm and hardware via one of these options:
 * Participants send their hardware to the organizers at the participant's expense.
@@ -34,6 +34,7 @@ Compeition Evaluators will evaluate the participant's algorithm and hardware via
 You will need the following installed on your machine:
 * Docker ( we tested with Docker version 19.03.15, build 99e3ed8919 )
 * Python ( we tested with Anaconda's python distribution version 3.6 )
+* Note that we tested everything on Ubuntu Linux 18.04 but other environments should be possible.
 
 ### Getting_Started
 
@@ -49,7 +50,7 @@ pip install -r requirements.txt
 ```
 Build an example T3 image from its location in the *t3/* directory:
 ```
-python install.py --dockerfile t3/faiss_cpu/Dockerfile
+python install.py --dockerfile t3/faiss_gpu/Dockerfile
 ```
 Create a small, sample dataset:
 ```
@@ -57,9 +58,11 @@ python create_dataset.py --dataset random-xs
 ```
 Run a benchmark evaluation using the algorithm's definition file:
 ```
-python run.py --definitions t3/faiss_cpu/algos.yaml
+python run.py --t3 --definitions t3/faiss_gpu/algos.yaml
 ```
-Analyze the results:
+Please note that the *t3* flag is important.  
+
+Now analyze the results:
 ```
 python plot.py --dataset random-xs
 ```
@@ -79,7 +82,7 @@ mkdir t3/[your_team_name]
 ```
 Develop and add your Docker build file into that directory.
 * During evaluation, this docker image will be run and your algorithm (covered next) will run inside the container that is instantiated.
-* See the following Docker file example.
+* See the following Docker file example in *t3/faiss_gpu/Dockerfile* 
 * Make sure you use the following command to build the docker image in the top-level directory of the repository:
 ```
 python install.py --dockerfile [path_to_dockerfile]
@@ -104,7 +107,7 @@ To benchmark your algorithm, first create an algorithm configuration yaml in you
 
 Now you can benchmark your algorithm using the run.py script:
 ```
-python run.py --definitions t3/[your_team_name]/algos.yaml
+python run.py --t3 --definitions t3/[your_team_name]/algos.yaml
 ```
 This will write the results into various files in the *results/* directory.
 
@@ -113,6 +116,11 @@ Now you can analyze the results by running:
 python plot.py --definitions t3/[your_team_name]/algos.yaml
 ```
 This will place a plot of the algorithms performance, recall-vs-throughput, into the *results/* directory.
+
+The plot.py script supports other benchmarks.  To see a complete list, run:
+```
+python plot.py --help
+```
 
 ### Submitting_Your_Algorithm
 
@@ -126,8 +134,8 @@ All but the binary index file can be submitted with a pull request of your custo
 
 We will provide you with an upload area for your binary index file during the competition.
 
-Additional information may be required:
-* To qualify for the cost track, please include evidence of the MSRP of your entire system.  Put this evidence into the *t3/[your_team_name]/* directory.
+Additional information may be required to qualify for all the leaderboards:
+* To qualify for the cost leaderboard, please include evidence of the MSRP of your entire system.  Put this evidence into the *t3/[your_team_name]/* directory.
 * If all of the source code cannot be included in your pull request, please provide an explanation of what the non-open-source part of the software does (host drivers, firmware, etc.) Put this explanation into the t3/[your_team_name]/ directory.
 
 ### How_To_Get_Help
@@ -138,19 +146,45 @@ There are several ways to get help as you develop your algorithm:
 
 ## For_Evaluators
 
+Evaluation will depend on how the participant has given access to their hardware, if at all.
+
 ### Evaluating_Participant_Algorithms
 
 How a participan't algorithm is benchmarked will depend on how they registered for the T3 competition:
 
 ### Participant_Sends_Hardware_To_Evaluators
 
-[TBD]
+Evaluators will work with participant's that send hardware during on-boarding. Hardware will be sent at the participant's expense.
+
+Evaluators and participants will work closely to make sure the hardware is properly installed and configured.
+
+Evauluators may give particpants remote access to machines in order to complete the setup, as needed.
 
 ### Participant_Gives_Remote_Access_To_Evaluators
 
-[TBD]
+Participants give Evaluators access to remote machines via SSH.
 
 ### Participant_Runs_And_Submits_Benchmarks
 
-[TBD]
+This is a very special case, and not all participant's will have this option.  In this case, the participant will run the evaluation on their own.  They will export the data to a CSV via the export.py script and send it to the Evaluators.  Participants are still required to submit a pull request and upload their best index.
+
+## Evaluating Power Consumption
+
+The hardware chassis which houses all the hardware must support the IPMI management interface.
+
+Determine the IP address, port, and authentication credentials of that interface.
+
+Follow the instructions at IPMICAP open-source project ( http://www.github.com/fractalsproject/ipmicap ) to access the IPMI and configure it to listen to an available port number.
+
+Capture the machine IP address of the machine which is running IPMICAP ( it does not have to be the same machine as the target hardware. )
+
+Now run the following for each competition dataset:
+```
+python run.py --dataset [DATASET] --t3 --definitions [DEFINITION FILE] --powercapture [IPMICAP_MACHINE_IP]:[IPMICAP_LISTEN_PORT]:[TIME_IN_SECONDS]
+```
+This will monitor power consumption over that period of time ( 10 seconds is a good number ).
+
+You can retrieve a plot of the power consumptions ( measures as watt*seconds/query ) using the plot.py script.
+
+
 
